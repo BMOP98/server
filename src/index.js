@@ -5,7 +5,7 @@ var cors = require("cors");
 const database = require("../modulos/dbconect")
 
 // settings
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 4000);
 
 // middlewares
 app.use(cors());
