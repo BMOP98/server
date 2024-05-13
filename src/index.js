@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const app = express();
 var cors = require("cors");
-const database = require("../modulos/dbconect")
+const database = require("./Components/dbconect")
 
 // settings
 app.set('port', process.env.PORT || 4000);
