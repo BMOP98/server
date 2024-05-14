@@ -3,7 +3,8 @@ const path = require('path');
 module.exports = {
   resolve: {
     fallback: {
-      "http": require.resolve("stream-http")
+      "http": require.resolve("stream-http"),
+      "querystring": false
     }
   },
   module: {
