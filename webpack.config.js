@@ -6,6 +6,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'), // Directorio de salida para los archivos construidos
     filename: 'bundle.js' // Nombre del archivo de salida
   },
+  target: 'node',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -21,5 +23,10 @@ module.exports = {
       // Aquí puedes agregar más reglas para procesar otros tipos de archivos, como CSS, imágenes, etc.
     ]
   },
+  /*polyfill:{
+    fallback:({
+      "url": require.resolve("url/")
+    })
+  }*/
   // Otras configuraciones de Webpack, como plugins, optimizaciones, etc., pueden ir aquí
 };
